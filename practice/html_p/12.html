@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <title>Практика 12 — тег pre</title>
+
+   <style>
+      pre {
+         background-color: #f4f4f4;
+         border: 1px solid #ccc;
+         padding: 10px 15px;
+         margin: 15px 0;
+         font-family: monospace;
+         font-size: 0.9em;
+         line-height: 1.4;
+         overflow-x: auto;
+      }
+
+      .wrap {
+         white-space: pre-wrap;
+         word-wrap: break-word;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Практика 12: використання тега &lt;pre&gt;</h1>
+
+   <h2>Що таке тег &lt;pre&gt;</h2>
+   <p>
+      Тег <code>&lt;pre&gt;</code> використовується для відображення тексту
+      зі збереженням усіх пробілів і переносів рядків.
+   </p>
+
+   <p>
+      Нижче наведений звичайний абзац, у якому в HTML-коді є зайві пробіли
+      та переноси рядків.
+   </p>
+
+   <p>
+      Додай приклад    звичайного тексту в тегу 
+      де навмисно є кілька пробілів і переносів
+   </p>
+
+   <p>
+      Той самий текст, але вже всередині тега <code>&lt;pre&gt;</code>.
+   </p>
+
+   <pre>
+Додай приклад    звичайного тексту в тегу 
+де навмисно є кілька пробілів і переносів
+   </pre>
+
+   <h2>Приклад програмного коду</h2>
+
+   <p>
+      Нижче показаний багаторядковий фрагмент коду з використанням
+      комбінації <code>&lt;pre&gt;&lt;code&gt;</code>.
+   </p>
+
+   <pre><code>
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("World");
+   </code></pre>
+
+   <h2>Структурований текст (ASCII-приклад)</h2>
+
+   <p>
+      Цей приклад імітує структурований текст, де важливе точне
+      вирівнювання символів.
+   </p>
+
+   <pre class="wrap">
+| 12 |\
+| 13 |\\
+| 14 |//
+| 15 |/
+   </pre>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>практика</title>
+</head>
+<body>
+	<form action="upload.php" method="POST" enctype="multipart/form-data">
+		<label for="username">Ваше ім'я:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="dox-upload">Виберіть документ (PDF, DOC, DOCX):</label>
+		<input type="file" id="doc-upload" name="userDocument"accept=".pdf, .doc, .docx"required>
+		<label for="img-upload">Виберіть зображення (JPG, PNG):</label>
+		<input type="file" id="img-upload" name="userImage" accept=".jpg, .jpeg, .png" required>
+		<button type="submit">Завантажити файли</button>
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Музей сучасного мистецтва – історія, експонати та виставки.">
+    <meta name="keywords" content="музей, історія, експонати, виставки, сучасне мистецтво">
+    <title>Контактна форма</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .special-box {
+            color: #555;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <figure>
+        <img src="images/logo.jpg" width="80" height="80" alt="Логотип музею">
+        <figcaption>Логотип музею</figcaption>
+    </figure>
+
+    <h1>Музей сучасного мистецтва</h1>
+    <p>
+        Ласкаво просимо до нашого музею.
+        <span style="color:#0000ff; font-weight:bold;">Виділення тексту</span>.
+    </p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="exhibitions.html">Виставки</a></li>
+            <li><a href="visit.html">Інформація для відвідувачів</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<main>
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Особиста інформація</legend>
+
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name"
+               required placeholder="Введіть ім’я"
+               minlength="2" maxlength="20">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               required placeholder="Введіть email">
+        <br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone"
+               required placeholder="Введіть номер">
+    </fieldset>
+
+    <fieldset>
+        <legend>Тип звернення</legend>
+
+        <input type="radio" id="question" name="contact_type" value="question" required>
+        <label for="question">Запитання</label><br>
+
+        <input type="radio" id="complaint" name="contact_type" value="complaint">
+        <label for="complaint">Скарга</label><br>
+
+        <input type="radio" id="suggestion" name="contact_type" value="suggestion">
+        <label for="suggestion">Пропозиція</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Теми, що цікавлять</legend>
+
+        <input type="checkbox" id="topic-exhibitions" name="topics[]" value="exhibitions">
+        <label for="topic-exhibitions">Виставки</label><br>
+
+        <input type="checkbox" id="topic-workshops" name="topics[]" value="workshops">
+        <label for="topic-workshops">Майстер-класи</label><br>
+
+        <input type="checkbox" id="topic-lectures" name="topics[]" value="lectures">
+        <label for="topic-lectures">Лекції</label><br>
+
+        <input type="checkbox" id="topic-membership" name="topics[]" value="membership">
+        <label for="topic-membership">Членство у клубі</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Деталі візиту</legend>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <label for="visitors">Кількість відвідувачів:</label>
+        <input type="number" id="visitors" name="visitors" min="1">
+        <br><br>
+
+        <label for="time">Час візиту:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <label for="tour">Виберіть екскурсію:</label>
+        <select id="tour" name="tour">
+            <option value="">— Оберіть —</option>
+            <option value="1">Перша</option>
+            <option value="2">Друга</option>
+            <option value="3">Третя</option>
+            <option value="4">Четверта</option>
+            <option value="5">П’ята</option>
+        </select>
+        <br><br>
+
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message"
+                  rows="5" cols="40"
+                  placeholder="Введіть ваше повідомлення"
+                  required></textarea>
+        <br><br>
+
+        <label for="file">Завантаження файлу:</label>
+        <input type="file" id="file" name="file"
+               accept="image/*,.pdf" multiple>
+        <br><br>
+
+        <input type="checkbox" id="rules" required>
+        <label for="rules">
+            Згода з <a href="https://roadmap.sh/">правилами</a>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <button type="submit">Відправити</button>
+        <button type="reset">Очистити форму</button>
+
+        <input type="hidden" name="form_id" value="contact">
+        <input type="color" name="color">
+        <input type="range" name="range">
+    </fieldset>
+
+</form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Всі права захищені</p>
+
+    <a href="https://www.youtube.com/">YouTube</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+</footer>
+
+</body>
+</html>

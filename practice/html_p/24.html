@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>практика</title>
+</head>
+<body>
+    <h1>Галерея мандрівок</h1>
+
+    <img src="images/landscape.jpg" alt="Прекрасний гірський пейзаж" width="400" height="300">
+    <img src="images/hiking.jpg" alt="Група туристів під час походу" width="400" height="200" loading="lazy">
+
+    <figure>
+        <img src="images/sunset.jpg" alt="Захід сонця над горами" width="400" height="200">
+        <figcaption>Теплий вечір у горах під час заходу сонця</figcaption>
+    </figure>
+
+    <img srcset="images/mountains-small.jpg 480w,
+                 images/mountains-medium.jpg 800w,
+                 images/mountains-large.jpg 1200w"
+         sizes="(max-width: 600px) 100vw,
+                (max-width: 1200px) 50vw,
+                800px"
+         src="images/mountains-medium.jpg" alt="Гірський краєвид">
+
+    <picture>
+        <source srcset="images/sunset.webp" type="image/webp">
+        <source srcset="images/sunset.jpg" type="image/jpeg">
+        <img src="images/sunset.jpg" alt="Захід сонця над горами">
+    </picture>
+
+    <img src="images/planets.jpg" alt="Планети Сонячної системи" usemap="#planetmap">
+
+    <map name="planetmap">
+        <area shape="circle" coords="180,139,14" href="venus.html" alt="Венера">
+        <area shape="circle" coords="122,120,8" href="mercury.html" alt="Меркурій">
+        <area shape="rect" coords="290,172,333,250" href="earth.html" alt="Земля">
+    </map>
+</body>
+</html>

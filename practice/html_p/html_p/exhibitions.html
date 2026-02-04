@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Музей сучасного мистецтва – історія, експонати та виставки.">
+    <meta name="keywords" content="музей, історія, експонати, виставки, сучасне мистецтво">
+    <title>Музей сучасного мистецтва</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .special-box {
+            color: #555;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <figure>
+        <img src="images/logo.jpg" width="80" height="80" alt="Логотип музею">
+        <figcaption>Логотип музею</figcaption>
+    </figure>
+
+    <h1>Музей сучасного мистецтва</h1>
+
+    <p>
+        Ласкаво просимо до нашого музею, де ви знайдете найцікавіші експонати та виставки.
+        Тут використано <span style="color:#0000ff; font-weight:bold;">виділення тексту</span>.
+    </p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="exhibitions.html">Виставки</a></li>
+            <li><a href="visit.html">Інформація для відвідувачів</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<main>
+    <!-- ❗ h1 всередині main прибрано (h1 має бути один) -->
+
+    <table border="1">
+        <caption>Перелік виставок</caption>
+
+        <thead>
+            <tr>
+                <th>Назва виставки</th>
+                <th>Дати проведення</th>
+                <th>Зал</th>
+                <th>Ціна</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Виставка 1</td>
+                <td>01–10 лютого</td>
+                <td rowspan="3">Зал A</td>
+                <td rowspan="3">100 грн</td>
+            </tr>
+            <tr>
+                <td>Виставка 2</td>
+                <td>11–20 лютого</td>
+            </tr>
+            <tr>
+                <td>Виставка 3</td>
+                <td>21–28 лютого</td>
+            </tr>
+
+            <tr>
+                <td>Виставка 4</td>
+                <td>01–15 березня</td>
+                <td rowspan="3">Зал B</td>
+                <td rowspan="3">150 грн</td>
+            </tr>
+            <tr>
+                <td>Виставка 5</td>
+                <td>16–25 березня</td>
+            </tr>
+            <tr>
+                <td>Виставка 6</td>
+                <td>26–31 березня</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Усі ціни вказані за один квиток</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Типи виставок</h2>
+    <ul>
+        <li>Постійні</li>
+        <li>Тимчасові</li>
+        <li>
+            Тематичні
+            <ul>
+                <li>Живопис</li>
+                <li>Скульптура</li>
+                <li>Фотографія</li>
+            </ul>
+        </li>
+        <li>Інтерактивні</li>
+    </ul>
+
+    <section id="multimedia-tour">
+        <h2>Віртуальний тур</h2>
+
+        <figure>
+            <video controls width="420" height="280" poster="preview.jpg">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                Ваш браузер не підтримує відео.
+            </video>
+            <figcaption>Відеоекскурсія музеєм</figcaption>
+        </figure>
+
+        <figure>
+            <audio controls preload="metadata">
+                <source src="audio.mp3" type="audio/mpeg">
+                <source src="audio.ogg" type="audio/ogg">
+                Ваш браузер не підтримує аудіо.
+            </audio>
+            <figcaption>Аудіогід музею</figcaption>
+        </figure>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+
+        <figure>
+            <img src="images/franko.jpg" alt="Іван Франко" width="180" height="200" loading="lazy">
+            <figcaption>Іван Франко</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/kotsiubynsky.jpg" alt="Михайло Коцюбинський" width="180" height="200" loading="lazy">
+            <figcaption>Михайло Коцюбинський</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/shevchenko.jpg" alt="Тарас Шевченко" width="180" height="200" loading="lazy">
+            <figcaption>Тарас Шевченко</figcaption>
+        </figure>
+		<figure>
+			<img src="images/stus.jpg" 
+			alt="фото назва"width="180" height="200" loading="lazy">
+			<figcaption>stus</figcaption>
+		</figure>
+		<figure>
+			<img src="images/vynnychenko.jpg" 
+			alt="фото назва"width="180" height="200" loading="lazy">
+			<figcaption>vynnychenko</figcaption>
+		</figure>		
+    </section>
+
+    <iframe
+        src="https://www.youtube.com/embed/tuzDifVNq74"
+        title="Відео з YouTube"
+        width="560"
+        height="315"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+</main>
+
+<footer>
+    <p>&copy; 2026 Всі права захищені</p>
+
+    <a href="https://www.youtube.com/">YouTube</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="exhibitions.html">Виставки</a></li>
+            <li><a href="visit.html">Інформація для відвідувачів</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>

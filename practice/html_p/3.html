@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій профіль</title>
+</head>
+<body>
+
+<h1 title="Це ваш профіль">Мій профіль</h1>
+
+<img src="profile.jpg" alt="Фото користувача" title="Мій профіль" width="150" height="150">
+
+<form>
+    <label>
+        Імʼя:
+        <input type="text" placeholder="Введіть ваше ім’я" tabindex="1">
+    </label>
+    <br>
+
+    <label>
+        Email:
+        <input type="email" required tabindex="2">
+    </label>
+    <br>
+
+    <label>
+        Пароль:
+        <input type="password" value="12345" readonly>
+    </label>
+    <br>
+
+    <label>
+        Вік:
+        <input type="number" min="1" max="120">
+    </label>
+    <br>
+
+    <label>
+        Улюблений фрукт:
+        <select>
+            <option value="apple">Яблуко</option>
+            <option value="banana" selected>Банан</option>
+            <option value="orange">Апельсин</option>
+        </select>
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" checked>
+        Підписка на новини
+    </label>
+    <br>
+
+    <button type="submit" disabled tabindex="3">Відправити</button>
+
+    <div data-user-id="42" data-role="student">Дані користувача</div>
+
+    <p data-level="beginner" data-course="html">Я вчу HTML</p>
+
+    <p dir="rtl" title="Текст справа наліво">مرحبا بالعالم</p>
+</form>
+
+</body>
+</html>

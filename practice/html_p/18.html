@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <title>практика12</title>
+</head>
+<body>
+   <!-- Заголовок з tabindex -->
+   <h1 tabindex="0">практика18</h1>
+
+   <!-- Посилання з href та title -->
+   <a href="https://www.youtube.com/" title="Відкрити YouTube">ютуб</a>
+
+   <!-- Абзаци з id, hidden та класами -->
+   <p id="p" hidden>Зроби невидимим для користувача</p>
+   <p class="class1 class2">Вкажи декілька класів одночасно</p>
+
+   <!-- Зображення з src та alt -->
+   <img src="photo.jpg" alt="Щось зображено на картинці">
+
+   <!-- Мова та напрям тексту -->
+   <p lang="uk">Текст усередині цього абзацу має відповідати мові</p>
+   <p dir="rtl">Текст у цьому абзаці відображається справа наліво</p>
+
+   <!-- Форма -->
+   <form>
+      <input type="text" value="Початковий текст">
+      <input type="text" required>
+      <input type="text" value="Це не можна редагувати" readonly>
+      <input type="text" placeholder="Введіть ім'я">
+      <br>
+      <input type="checkbox" checked> Запам'ятати мене
+      <input type="checkbox"> Погоджуюсь з умовами
+   </form>
+
+   <!-- Випадаючий список -->
+   <select>
+       <option value="potato">Potato</option>
+       <option value="banana" selected>Banana</option>
+   </select>
+
+   <!-- Кнопки -->
+   <button type="submit" tabindex="1">Надіслати</button>
+   <button type="submit" disabled>Заблокована кнопка</button>
+
+   <!-- Користувацькі data-атрибути -->
+   <p data-input="123" data-category="practice">Input</p>
+</body>
+</html>
