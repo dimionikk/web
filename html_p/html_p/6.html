@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang ="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <title>практика6</title>
+</head>
+
+<body>
+   <h2>згортання пробілів</h2>
+   <p>
+       Це    текст,      у якому
+       є багато       пробілів
+       і переносів
+       рядків.
+   </p>
+   <h2>елемент &lt;pre&gt;</h2>
+   <pre>
+       Це    текст з
+           відступами,
+           кількома пробілами
+       і переносами рядків.
+   </pre>
+   <h2>Код з форматуванням</h2>
+   <pre><code>
+    function sayHello(name) {
+        console.log("Привіт, " + name + "!");
+   }
+   </code></pre>
+   <h2>Нерозривні пробіли</h2>
+   <p>Ціна: $199&nbsp;CAD</p>
+   <h2>white-space в CSS</h2>
+
+<style>
+.normal {
+    white-space: normal;
+    width: 200px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.nowrap {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prewrap {
+    white-space: pre-wrap;
+    width: 200px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+</style>
+
+<div class="normal">
+Це    текст з   багатьма пробілами
+і переносами рядків.
+</div>
+
+<div class="nowrap">
+Це    текст з   багатьма пробілами
+і переносами рядків.
+</div>
+
+<div class="prewrap">
+Це    текст з   багатьма пробілами
+і переносами рядків.
+</div>
+<h2>Коментар користувача</h2>
+
+<style>
+.user-comment {
+    white-space: pre-wrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+</style>
+
+<div class="user-comment">
+Привіт! Це    мій перший коментар.
+
+Я хочу показати,   що
+    пробіли та відступи зберігаються.
+
+Сподіваюсь, що все видно правильно.
+</div>
+<style>
+.block {
+    display: inline-block;
+    margin-right: 20px; /* відстань між блоками */
+    padding: 10px;
+}
+</style>
+
+<h2>Горизонтальні проміжки між блоками</h2>
+
+<div class="block">Блок 1</div>
+<div class="block">Блок 2</div>
+<div class="block">Блок 3</div>
+ 
+
+
+</body>
+
+
+</html>

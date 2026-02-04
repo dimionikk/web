@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <title>Практика HTML-зображень</title>
+</head>
+<body>
+
+<h1>Галерея подорожей</h1>
+
+<!-- Адаптивне зображення з srcset і sizes -->
+<img srcset="photosmall.jpg 480w, photomedium.jpg 800w"
+     sizes="(max-width: 600px) 100vw,
+            (max-width: 1200px) 50vw,
+            800px"
+     src="photo1.jpg"
+     alt="Фото красивого пейзажу" width="500" height="300"><br>
+
+<!-- Звичайне зображення з lazy loading -->
+<img src="photo2.jpg" alt="Фото гори з озером" loading="lazy"><br>
+
+<!-- Декоративне зображення -->
+<img src="photo3.jpg" alt=""><br>
+
+<!-- Зображення з використанням picture -->
+<picture>
+  <source media="(min-width: 800px)" srcset="photolarge.jpg">
+  <source media="(min-width: 450px)" srcset="photomedium.jpg">
+  <img src="photosmall.jpg" alt="Вид на сонячний пляж">
+</picture><br>
+
+<!-- Зображення з підписом -->
+<figure>
+  <img src="images/gallery-photo.jpg" alt="Група людей, що йдуть пішохідною стежкою.">
+  <figcaption>Туристи насолоджуються сонячним днем на гірській стежці.</figcaption>
+</figure><br>
+
+<!-- Image map -->
+<img src="images/planets.jpg" alt="Планети Сонячної системи" usemap="#planetmap">
+<map name="planetmap">
+  <area shape="circle" coords="180,139,14" href="#" alt="Венера">
+  <area shape="circle" coords="122,120,8" href="#" alt="Меркурій">
+  <area shape="rect" coords="290,172,333,250" href="#" alt="Земля">
+</map>
+
+</body>
+</html>
